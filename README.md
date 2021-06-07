@@ -1,4 +1,6 @@
-# image_background_removal
+----------------------------------------------------------------------------------------------------------------
+![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
+----------------------------------------------------------------------------------------------------------------
 A use-case by Faktion and Becode for the the removal of background in images.
 
 ## image_background_removal
