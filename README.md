@@ -1,60 +1,58 @@
 ----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
 
-<p> <strong> An applied AI UseCase by Faktion and Becode to remove the background in seconds! </strong> </p>
+<h5> <strong> An applied AI UseCase by Faktion and Becode to remove the background in seconds! </strong> </h5>
 ----------------------------------------------------------------------------------------------------------------
 
 ---
 
-## **Table of Contents**
-Your sections headers will be used to reference the location of destination.
+This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**, **[Louan Mastrogiovanni](https://github.com/Louan-M)** and **[Gülce Padem](https://github.com/gpadem)**, and **[Arlene Postrado](https://github.com/arlene14ko)** who are currently Junior Data Scientists/AI Operators at BeCode's Theano 2.27 promotion.
 
-- [Author Info](#author-info)
-- [Description](#description)
+- Repository: `image_background_removal`
+- Type of challenge: `Learning`
+- Level: `Junior Data Scientist`
+- Duration: `2 weeks`
+- Deadline : `10/06/21 4:00 PM`
+- Team challenge: `Group Project`
+- Deployment Strategy: `Github Page, Google Collab and Flask`
+- Promotion : `AI Theano 2`
+- Coding Bootcamp: `Becode Artificial Intelligence (AI) Bootcamp`
+- Use Case Given By: `[Faktion](https://www.faktion.com/)`
+
+---
+## **Table of Contents**
+- [Mission Objectives](#mission)
+- [About The Repository](#about)
 - [How To Use](#how-to-use)
 - [Repo Artitecture](#repo-artitecture)
 - [Next Step](#next-step)
-- [License](#license)
+- [Author Info](#author-info)
 
 ---
 
----
+## **Mission Objectives**
 
-![image](https://user-images.githubusercontent.com/60827480/119011524-70488a80-b995-11eb-8ddd-55f7c9363572.png)
-
----
-
-This project outcome belongs to **[Arlene Postrado](https://github.com/arlene14ko)**, **[Daniel Mendoza](https://github.com/danielmendoza4213)**, **[Louan Mastrogiovanni](https://github.com/Louan-M)** and **[Martin Makyeme](https://github.com/makyeme)** who are currently Junior Data Scientists/AI Operators in making at BeCode's Theano 2.27 promotion.
-
-- Repository: `yoga_pose`
-- Type of challenge: `Learning`
-- Level: `Junior Data Scientist`
-- Duration: `5 days`
-- Deadline : `19/05/21 5:00 PM`
-- Team challenge: `Group Project`
-- Deployment Strategy: `Github page and Flask`
-- Promotion : `AI Theano 2`
-- Coding Bootcamp: `Becode Artificial Intelligence (AI) Bootcamp`
-
----
-
-## Mission Objectives
-
-- Be able to work with computer vision libraries, and techniques for tracking poses on images on videos
-- Be able to explore the pre-trained models for pose tracking on live and streaming media
-- Be able to predict Yoga poses in real time
+- Be able to work with computer vision libraries, and techniques to remove the background on images
+- Be able to explore the pre-trained models for background removal on image and videos
+- Be able to create and deploy a quality background removal API
 - Be able to use Neural Networks and Machine Learning models
 - Be able to deploy the models for end customers
 
 ---
 
-## The Mission
+## **About The Repository**
 
-YogaLive is a platform that provides yoga classes virtually. YogaLive is looking for a solution to improve the quality of their services, the main challenge they face is to analyse how students are performing the different poses in a normal yoga class. Being virtual and live classes, it can be difficult for teachers and students to know how well the poses are being performed, this can be due to both the number of students and technical issues such as the quality of the video
+<p align="justify">
+One of our partner companies gave us a usecase to use Deep Learning technologies to remove the image background of an image. There are already a lot of pretrained models available but our partner would like to have the better quality of the results on the images.
+</p>
+<p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the [DUTS Image dataset](http://saliencydetection.net/duts/) to train and test on and also 15 High Quality images that the client chose.</p>
 
-The company has provided us with sample images of different poses performed by one of their teachers, in order to obtain a model that can recognise the type of pose, estimate the duration of each pose and how many times this pose has been performed. If possible also a model to get a dayly, weekly or monthly student report.
+<p align="justify"> ------ Conclusion here -----
+</p>
+<p align = "justify">This project is currently deployed locally, if you wanted to try to run this on your own and you dont have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
 
-Update: Data has been increase with google images to test models
+<br/>
+images to test models
 
 ---
 
@@ -72,7 +70,6 @@ Update: Data has been increase with google images to test models
 
 This is a repository is about developing a model that is able to predict a yoga pose using pretrained Convolutional Neural Networks and the computer vision libraries and techniques.
 
-This project is currently deployed locally, if you wanted to try to run this on your own and you dont have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.
 
 **Here is a sample dashboard:**!
 
@@ -245,22 +242,7 @@ Yoga_Pose_Detection
 
 
 
-## **Description**
 
-<p align="justify">
-Online Yoga coaching jobs are becoming challenging for the coaches because it's hard for them to keep track of the progress of each one of the participants. They would like to evaluate if the students are doing the poses correctly and provide custom-made training plans but it's hard to do when hundreds are joining the same class.
-</p>
-<p align="justify">
-Project Goal is to to build an application able to track the poses done by the yoga practitioner, measure time, repetitions and evaluate if the poses are done correctly.
-The MVP is where the customers receive a report of the yoga poses, which ones were done correctly, and metrics related to time and repetition.
-</p>
-
-<p align="justify">
-We are using the MediaPipe, one of the cutting edge tech to detect the body position and as for classification we used RandomForest, a Machine Learning model which helps produce a great result.
-We came up with many conclusions, as we also tried to attempt many different models to complete the project. Including CNN model, and Neural Network model which is stated to be very advanced and preferred Neural Network AI model for most of the digital visual analysis.
-</p>
-
-<br/>
 
 ## **Technologies**
 <br/>
