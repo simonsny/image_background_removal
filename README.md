@@ -22,11 +22,14 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ---
 ## **Table of Contents**
 - [Mission Objectives](#mission-objectives)
-- [About The Repository](#about)
+- [About The Repository](#about-the-repository)
+- [Architecture](#architecture)
+- [Repository](#repository)
 - [How To Use](#how-to-use)
-- [Repo Artitecture](#repo-artitecture)
-- [Next Step](#next-step)
-- [Author Info](#author-info)
+- [Libraries Used For This Project](#libraries-used-for-this-project)
+- [Future Plans](#future-plans)
+- [Collaboration](#collaboration)
+- [Authors Info](#authors-info)
 
 ---
 
@@ -41,6 +44,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ---
 
 ## **About The Repository**
+![image](https://user-images.githubusercontent.com/60827480/121079465-6ec2f300-c7da-11eb-80ab-e69e244c9775.png)
 
 <p align="justify">
 One of our partner companies gave us a usecase to use Deep Learning technologies to remove the image background of an image. There are already a lot of pretrained models available but our partner would like to have the better quality of the results on the images.
@@ -52,174 +56,14 @@ One of our partner companies gave us a usecase to use Deep Learning technologies
 <p align = "justify">This project is currently deployed locally, if you wanted to try to run this on your own and you dont have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
 
 <br/>
-images to test models
-
----
-
-### Table of Contents
-
-- Packages Requirements
-- Repository
-- Visual
-- Pending things to do
-- Collaboration
-
----
-
-## About the Repository
-
-This is a repository is about developing a model that is able to predict a yoga pose using pretrained Convolutional Neural Networks and the computer vision libraries and techniques.
-
 
 **Here is a sample dashboard:**!
-
-![image](https://user-images.githubusercontent.com/60827480/119103353-5baed580-ba1b-11eb-9537-4cdc7afc5376.png)
-
+ ---------------- SAMPLE HERE ----------------
 
 ---
+## **Architecture**
 
-### Repository
-
-This has 2 versions:
-
-1. You can run this program locally using the **app.py**
-2. If you dont have a GPU, you can run the **YogaLive_app_py.ipynb** notebook using [Google Colab](https://colab.research.google.com/).
-
-**0. Exploration Phase folder**
-
-- This is where the exploration about the domain is done.
-- This currently has 1 notebook namely:
-
-  1. **landmark_from_images.ipynb**
-     - this is where we explored how to get the landmarks in an image using mediapipe
-  2. **real time prediction.ipynb**
-     - this is where we explored how to get the landmarks with the test video
-
-**1. MACHINE LEARNING folder**
-
-1. **Creating the training dataset.ipynb**
-
-   - this is the notebook where we first created our dataset using MediaPipe and getting those landmarks, saving those landmarks in a csv file and creating a Machine Learning Model using that csv file
-
-2. **SVM.ipynb**
-
-   - this is the notebook where we created the Machine Learning Model
-
-3. **yoga_poses_model.pkl**
-   - this is the saved Machine Learning model using pickle and this used the MediaPipe landmarks
-
-**2. NEURAL NETWORK folder**
-
-1. **CNN_Model.py**
-
-   - this is where our CNN model was created and was later used as our model to get the pose analysis
-
-2. **VGG16.ipynb**
-
-   - this is the pretrained CNN model which we used to create our model
-
-3. **final_model folder**
-   - this folder contains the final model of our CNN, but we did not upload it because it is too heavy. If you want to know more, dont hesitate to contact us!
-
-**.gitignore**
-
-- is a txt file used for specifying which files/folders does git needs to ignore so it will not upload to github
-- This is used because our dataset cannot be uploaded as it is confidential and also our CNN final model was 1.25GB which the Github cannot handle as of the moment
-- If you want to have access to our final model, please dont hesitate to send us a message! :)
-
-**static folder**
-
-- this is where the logo and favicon is saved
-
-**templates folder**
-
-- this is where all the html templates are saved
-- this has 3 html files namely:
-
-  1.  **layout.html**
-
-      - this is where all the imports for the html is located
-      - this is also where the NavBar and the Footer is saved so it will be shown on all pages
-
-  2.  **analyze.html**
-
-      - this is where the the user needs to input the details to be able to analyze the poses
-      - it has a tab depending on the user needs:
-
-              - Live tab - allows the user to use live stream video to analyze the pose
-              - Upload tab - allows the user to upload a video file to analyzethe pose
-
-  3.  **live_feed.html**
-      - this is the page where you will see the video with the analyzed poses and the details of the pose
-
-**app.py**
-
-- You can run this repository on your local computer using this python file
-- Flask app containing all the functions for the program to run in flask
-- Routes include but not limited to: - route that will ask the user input - route that will show the live feed/stream and predicting the poses
-- Functions include but not limited to: - function that get the video, extract frames from that video and predict the the poses - function that calculate the angles
-
-**yogaLive_app_py.ipynb**
-
-- You can run this notebook using [Google Colab](https://colab.research.google.com/)'s GPU
-- This notebook contains all the functions for the program to run in Google Colab, it also includes code for you to connect Google Colab with your drive to properly run the code
-- Routes include but not limited to: - route that will ask the user input - route that will show the live feed/stream and predicting the poses
-- Functions include but not limited to: - function that get the video, extract frames from that video and predict the the poses - function that calculate the angles
-
-**README.md**
-
-- has all the necessary information regarding the project
-- It would be highly recommended to read all the information in the README file.
-
----
-
-## Libraries Used For This Project
-
-**OpenCV** https://opencv.org/
-
-- OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.
-- In this project, OpenCV is used to read the videos and get the frames from each image
-
-**Keras** https://flask.palletsprojects.com/en/1.1.x/
-
-- Keras follows best practices for reducing cognitive load: it offers consistent & simple APIs, it minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages.
-- In this project, Keras is used to create the model easier
-
-**MediaPipe** https://mediapipe.dev/
-
-- MediaPipe offers open source cross-platform, customizable ML solutions for live and streaming media.
-- In this project, MediaPipe pose is used to extract the landmarks to use it for training our SVM model and also afterwards to get the landmarks to calculate the angles
-
-**Flask** https://flask.palletsprojects.com/en/1.1.x/
-
-- Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries
-- In this project, flask is used to create the web dashboard application
-
-**Pandas** https://pypi.org/project/pandas/
-
-- Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
-- In this project, pandas is used convert a list to create a dataframe and convert that dataframe to a csv
-
----
-
-## Clone / Fork This Repository
-
-- This project is open to collaborations as well as forking or cloning for further development. If you wish to clone/fork this repository, you can just click on the repository, then click the Clone/Fork button and follow the instructions.
-
-## P E N D I N G . . .
-
-- We believe that with a bigger dataset, accuracy of the predictions models can be imporved.
-
-![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
-
-### Thank you for reading. Have fun with the code! 🤗
-
-
-
-
-## image_background_removal
-
-Yoga_Pose_Detection
+Image_Background_Removal
 │
 │   README.md               :explains the project
 │   requirements.txt        :packages to install to run the program
@@ -238,33 +82,6 @@ Yoga_Pose_Detection
 │   │   │ DUTS-TR-Mask 
 
 
-<p> <strong> "Yoga is the journey of the self, through the self, to the self." -- The Bhagavad Gita </strong> </p>
-
-
-
-
-
-## **Technologies**
-<br/>
-
-| Library       | Used to                                        |
-| ------------- | :----------------------------------------------|
-| Flask         | to scale up to complex applications.           |
-| gunicorn      | a Python WSGI HTTP Server for UNIX.            |
-| itsdangerous  | to ensure that a token has not been tampered   |
-| Jinja2        | a combination of Django templates and python   |
-| MarkupSafe    | to mitigates injection attacks                 |
-| Werkzeug      | to build all sorts of end user applications    |
-| numpy         | to scientific uses                             |
-| scipy         | for fast N-dimensional array manipulation      |
-| scikit-learn  | for machine learning built on top of SciPy     |
-| matplotlib    | for creating visualizations                    |
-| pandas        | to work with data structure and manipulate it  |
-| mediapipe	| to with different body position 		 |
-
-
-[**↥ Back To The Top**](#table-of-contents)
-
 ---
 
 ## **How To Use**
@@ -272,112 +89,70 @@ Yoga_Pose_Detection
 ### **Installation** 
 
 `Python Ver. '3.8'`
+---add other stuff here -----
 
-**Note:** Just use the command below to install the required library with the correct version to run the program smoothly.
-
-`pip install -r requiement.txt`
-
-
-1. After the required library install basic application can be run by just running `app.py` python script.
-
-2. **(optional: <u>separate training set</u>)** Download import file and move it to `\yoga_gesture_detection\pose_recognition_data\training data\training frames\videos`
-3. **(optional: <u>generate different model</u>)** Inside `_Project_Analysis` directory run `body_pose_detection.ipynb`
-	* Frame to video
-	* Train model separately
-	* generate different models for personal testing
-4. Run the `app.py` file to host the application locally.
-
-
-[**↥ Back To The Top**](#table-of-contents)
 
 ---
 
-## **Repo Artitecture**
-```
-Yoga_Pose_Detection
-│
-│   README.md               :explains the project
-│   requirements.txt        :packages to install to run the program
-│   .gitignore              :specifies which files to ignore when pushing to the repository
-│__   
-│   _Project_Analysis       :directory contain all analysis done while doing this project.
-│   │
-│   │ body_pose_detection.ipynb            :frame-to-video getting coordinates. Classifying Body pose
-│   │ Neural_Network_model_training:ipynb  :research and analysis performed for Neural Networking
-│   │ Classification.ipynb  :analysing the best ML model to go with for classification
-│   │ counting.py           :Performing the reputation and time counts.
-│__   
-│   data          	    :directory the main video/image features files.
-│   │
-│   │ coords.csv	    :csv file containing every classification coordinate in image/videos.
-│__   
-│   main       		    :directory the main video/image features files.
-│   │
-│   │ pose_detection.py     :main script file to detect the pose and classify it accordingly.
-│__   
-│   saved_model    	    :directory the saved training model of the classification.
-│   │
-│   │ body_language.pkl     :pickel/saved file of the trained model.
-│__   
-│   templates               :directory contain all the main html that work as a dashboard.
-│   │
-│   │ Dashboard.html        :dashboard for user to view the results.
-│   │ index.html            :home page for website, provide the general informations.
-│__   
-│   upload                  :directory contains all the video file uploaded by the user for analysis.
-│
-│   app.py                  :python script file to deploy model and html files for web application.
-```
+## **Repository**
 
-[**↥ Back To The Top**](#table-of-contents)
+
+**README.md**
+
+- has all the necessary information regarding the project
+- It would be highly recommended to read all the information in the README file.
+
+
+------------- ADD OTHER STUFF HERE ----------
 
 ---
 
-## **Next Step**
+## **Libraries Used For This Project**
 
-- Separate Web Dashboard for application performing the analysis, also including real time update.
-- Improve Overall analysis Dashboard.
-- Use of Neural Network.
-- Improve Accuracy with Object detection.
-- Improvement of angle detection.
+**OpenCV** https://opencv.org/
 
-[**↥ Back To The Top**](#table-of-contents)
+- OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.
+- In this project, OpenCV is used to read the image and calculate the erosion and dilation for the trimap
+
+**Keras** https://flask.palletsprojects.com/en/1.1.x/
+
+- Keras follows best practices for reducing cognitive load: it offers consistent & simple APIs, it minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages.
+- In this project, Keras is used to create the model easier
+
+**Flask** https://flask.palletsprojects.com/en/1.1.x/
+
+- Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries
+- In this project, flask is used to create the web dashboard application
+
+
+------------- ADD OTHER STUFF HERE ----------
 
 ---
-## **License**
 
-Copyright (c) [2021] [Sijal Kumar Joshi, Simon Snyders, Vincent Rolin]
+## **Future Plans**
 
-<p align="justify">
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-</p>
-<p align="justify">
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-</p>
-<p align="justify">
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</p>
+--- add stuff here-------
 
-[**↥ Back To The Top**](#table-of-contents)
+---
 
+## **Collaboration**
+
+- This project is open to collaborations as well as forking or cloning for further development. If you wish to clone/fork this repository, you can do so by clicking on the repository, then click the Clone/Fork button and follow the instructions.
 ---
 
 ## **Authors Info**
 
-- Linkedin - [Sijal Kumar Joshi](https://www.linkedin.com/in/sijal-kumar-joshi-b1545584/), [Simon Snyders](https://www.linkedin.com/in/simon-snyders-9452aa146/), [Vincent Rolin](https://www.linkedin.com/in/vincent-rolin-/)
-- Github   - [Sijal Kumar Joshi](https://github.com/sijal001), [Simon Snyders](https://github.com/simonsny), [Vincent Rolin](https://github.com/RolyVy)
+- Linkedin - **[Simon Snyders](https://www.linkedin.com/in/simon-snyders-9452aa146/)**, **[Louan Mastrogiovanni](https://www.linkedin.com/in/louan-mastrogiovanni-9a0a46143/)** and **[Gülce Padem](https://www.linkedin.com/in/gulce-padem/)**, and **[Arlene Postrado](https://www.linkedin.com/in/arlene-postrado/)**
+- Github   - **[Simon Snyders](https://github.com/simonsny)**, **[Louan Mastrogiovanni](https://github.com/Louan-M)** and **[Gülce Padem](https://github.com/gpadem)**, and **[Arlene Postrado](https://github.com/arlene14ko)**
+
+---
+
+![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
+
+### Thank you for reading. Have fun with the code! 🤗
 
 [**↥ Back To The Top**](#table-of-contents)
+
+---
+
 
