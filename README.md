@@ -1,7 +1,25 @@
 ----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
+
+<p> <strong> Remove the background in seconds! </strong> </p>
 ----------------------------------------------------------------------------------------------------------------
+---
+
+## **Table of Contents**
+Your sections headers will be used to reference the location of destination.
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Repo Artitecture](#repo-artitecture)
+- [Next Step](#next-step)
+- [License](#license)
+- [Author Info](#author-info)
+
+---
+
 A use-case by Faktion and Becode for the the removal of background in images.
+
+
 
 ## image_background_removal
 
@@ -24,29 +42,9 @@ Yoga_Pose_Detection
 │   │   │ DUTS-TR-Mask 
 
 
-<h1 align="center"> <strong>Yoga Pose Detection</strong> </h1>
+<p> <strong> "Yoga is the journey of the self, through the self, to the self." -- The Bhagavad Gita </strong> </p>
 
 
-<img src="https://images.pexels.com/photos/6787408/pexels-photo-6787408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Italian Trulli" width="1000" height="550" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;">
-
-> <p> <strong> "Yoga is the journey of the self, through the self, to the self." -- The Bhagavad Gita </strong> </p>
-
----
-
-## **Table of Contents**
-Your sections headers will be used to reference the location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [Repo Artitecture](#repo-artitecture)
-- [Next Step](#next-step)
-- [License](#license)
-- [Author Info](#author-info)
-
----
 
 ## **Description**
 
