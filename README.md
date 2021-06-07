@@ -21,7 +21,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 
 ---
 ## **Table of Contents**
-- [Mission Objectives](#mission)
+- [Mission Objectives](#mission-objectives)
 - [About The Repository](#about)
 - [How To Use](#how-to-use)
 - [Repo Artitecture](#repo-artitecture)
