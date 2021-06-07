@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
 
-<p> <strong> Remove the background in seconds! </strong> </p>
+<p> <strong> An applied AI UseCase by Faktion and Becode to remove the background in seconds! </strong> </p>
 ----------------------------------------------------------------------------------------------------------------
 ---
 
@@ -17,7 +17,7 @@ Your sections headers will be used to reference the location of destination.
 
 ---
 
-A use-case by Faktion and Becode for the the removal of background in images.
+.
 
 
 
