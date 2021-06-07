@@ -2,7 +2,6 @@
 ![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
 
 <h5> <strong> An applied AI UseCase by Faktion and Becode to remove the background in seconds! </strong> </h5>
-----------------------------------------------------------------------------------------------------------------
 
 ---
 
