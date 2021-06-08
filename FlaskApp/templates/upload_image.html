@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<!-- IMAGE RESULTS HTML  -->
+    <div class="row">
+        <div class="col-6">
+            <h5> Uploaded Image </h5>
+            {% if filename %}
+            <div class="card" style="width: 60vh; height: 60vh; object-fit: contain; margin-left: 15vh;">
+                <img class="card-img-top" src="{{ url_for('display_image', filename=filename) }}">
+            </div>
+            <br>
+            <button onclick="location.href='/start'" class="btn btn-primary"><i class="fas fa-undo"></i> Change Image</button>
+            {% endif %}
+        </div>
+        <div class="col-6">
+            <h5> Edited Image</h5>
+            {% if filename %}
+            <div class="card" style="width: 60vh; height: 60vh; object-fit: contain; margin-left: 15vh;">
+                <img class="card-img-top" src="{{ url_for('display_image', filename=filename) }}">
+            </div>
+            <br>
+            <a href="{{url_for('save_file', filename=filename)}}" download>
+            <button type="submit"  class="btn btn-primary"><i class="fas fa-download"></i> Save Image</button></a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}
