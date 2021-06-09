@@ -15,7 +15,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - Team challenge: `Group Project`
 - Deployment Strategy: `Github Page, Google Collab and Flask`
 - Promotion : `AI Theano 2`
-- Coding Bootcamp: `Becode Artificial Intelligence (AI) Bootcamp`
+- Coding Bootcamp: [Becode Artificial Intelligence (AI) Bootcamp](https://becode.org/learn/ai-bootcamp/)
 - Use Case Given By: [Faktion](https://www.faktion.com/)
 
 ---
