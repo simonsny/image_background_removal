@@ -22,9 +22,8 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ## **Table of Contents**
 - [Mission Objectives](#mission-objectives)
 - [About The Repository](#about-the-repository)
-- [Architecture](#architecture)
-- [Repository](#repository)
 - [How To Use](#how-to-use)
+- [Repository](#repository)
 - [Libraries Used For This Project](#libraries-used-for-this-project)
 - [Future Plans](#future-plans)
 - [Collaboration](#collaboration)
