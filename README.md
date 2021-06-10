@@ -13,7 +13,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - Duration: `2 weeks`
 - Deadline : `10/06/21 4:00 PM`
 - Team challenge: `Group Project`
-- Deployment Strategy: `Github Page, Google Collab and Flask`
+- Deployment Strategy: `Github Page, Google Colab and Flask`
 - Promotion : `AI Theano 2.27`
 - Coding Bootcamp: [Becode Artificial Intelligence (AI) Bootcamp](https://becode.org/learn/ai-bootcamp/)
 - Use Case Given By: [Faktion](https://www.faktion.com/)
@@ -62,7 +62,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 ### **Installation** 
 
 - If you have a GPU on your computer use the requirements.txt file to install the necessary libraries.
-- If you are using Google Collab, the code will work as it is, since we import all the necessary libraries in our code.
+- If you are using Google Colab, the code will work as it is, since we import all the necessary libraries in our code.
 
 ### **Repository**
 
