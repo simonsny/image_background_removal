@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------
-![image](https://user-images.githubusercontent.com/60827480/121077339-cd3aa200-c7d7-11eb-9d7c-b7b2b3ff5b80.png)
+![image](FlaskApp/static/assets/logo1.png)
 
 <h5> <strong> An applied Artificial Intelligence UseCase by Faktion and Becode to remove the background in seconds using Deep Learning technologies! </strong> </h5>
 
@@ -43,16 +43,16 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ---
 
 ## **About The Repository**
-![image](https://user-images.githubusercontent.com/60827480/121079465-6ec2f300-c7da-11eb-80ab-e69e244c9775.png)
+![image](FlaskApp/static/assets/cover.png)
 
 <p align="justify">
-One of our partner companies gave us a usecase to use Deep Learning technologies to remove the image background of an image. There are already a lot of pretrained models available but our partner would like to have the better quality of the results on the images.
+This use case is given by one of our partner companies to use Deep Learning technologies to remove the background of an image. There are already a lot of pretrained models available. Our partner expects us to get better results either by transfer learning or training our own model.
 </p>
 <p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the [DUTS Image dataset](http://saliencydetection.net/duts/) to train and test on and also 15 High Quality images that the client chose.</p>
 
 <p align="justify"> ------ Conclusion here -----
 </p>
-<p align = "justify">This project is currently deployed locally, if you wanted to try to run this on your own and you dont have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
+<p align = "justify">This project is currently deployed locally, if you want to try to run this on your own and you don't have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
 
 <br/>
 
@@ -61,24 +61,9 @@ One of our partner companies gave us a usecase to use Deep Learning technologies
 
 ---
 ## **Architecture**
-
-Image_Background_Removal
-│
-│   README.md               :explains the project
-│   requirements.txt        :packages to install to run the program
-│   .gitignore              :specifies which files to ignore when pushing to the repository
-│__   
-│   utils                   :directory that contains python files with usefull functions and Classes.
-│   │
-│   │ preprocessing.py      :python file that contains preprocessing functions. (example file)
-│__
-│   data                    :directory that contains the data needed for this project (train and test images).
-│   │ DUTS-TE               
-│   │   │ DUTS-TE-Image
-│   │   │ DUTS-TE-Mask 
-│   │ DUTS-TR
-│   │   │ DUTS-TR-Image
-│   │   │ DUTS-TR-Mask 
+Image_Background_Removal │ │ README.md :explains the project │ requirements.txt :packages to install to run the program │ .gitignore :specifies which files to ignore when pushing to the repository │__
+│ utils :directory that contains python files with useful functions and Classes │ │ │ │ preprocessing.py :python file that contains preprocessing functions (example file) │__ │ data :directory that contains the data needed for this project (train and test images) │ │ DUTS-TE
+│ │ │ DUTS-TE-Image │ │ │ DUTS-TE-Mask │ │ DUTS-TR │ │ │ DUTS-TR-Image │ │ │ DUTS-TR-Mask
 
 
 ---
@@ -87,19 +72,33 @@ Image_Background_Removal
 
 ### **Installation** 
 
-`Python Ver. '3.8'`
----add other stuff here -----
 
-
----
 
 ## **Repository**
 
 
 **README.md**
 
-- has all the necessary information regarding the project
-- It would be highly recommended to read all the information in the README file.
+- This file has all the necessary information regarding the project.You are reading it now.
+- It is highly recommended to read all the information in the README file.
+
+**.gitignore**
+
+**bg_removal_workflow.ipynb**
+
+**Updated_FlaskApp.ipynb**
+
+**modnet_alpha_matte_simon.ipynb**
+
+**data folder**
+
+**utils folder**
+
+**FlaskApp folder**
+
+
+
+
 
 
 ------------- ADD OTHER STUFF HERE ----------
@@ -111,17 +110,17 @@ Image_Background_Removal
 **OpenCV** https://opencv.org/
 
 - OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.
-- In this project, OpenCV is used to read the image and calculate the erosion and dilation for the trimap
+- In this project, OpenCV is used to read the image and calculate the erosion and dilation for the trimap.
 
-**Keras** https://flask.palletsprojects.com/en/1.1.x/
+**PyTorch** 
 
-- Keras follows best practices for reducing cognitive load: it offers consistent & simple APIs, it minimizes the number of user actions required for common use cases, and it provides clear & actionable error messages.
-- In this project, Keras is used to create the model easier
+- An open source machine learning framework that accelerates the path from research prototyping to production deployment.
+- In this project, PyTorch is used to run a pretrained model.
 
 **Flask** https://flask.palletsprojects.com/en/1.1.x/
 
-- Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries
-- In this project, flask is used to create the web dashboard application
+- Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+- In this project, flask is used to create the web dashboard application.
 
 
 ------------- ADD OTHER STUFF HERE ----------
@@ -130,9 +129,8 @@ Image_Background_Removal
 
 ## **Future Plans**
 
---- add stuff here-------
-
----
+- We would like to train our own model.
+- We would like to increase the quality of our trimap.
 
 ## **Collaboration**
 
@@ -146,7 +144,7 @@ Image_Background_Removal
 
 ---
 
-![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
+![Thank you](FlaskApp/static/assets/thank_you.png)
 
 ### Thank you for reading. Have fun with the code! 🤗
 
