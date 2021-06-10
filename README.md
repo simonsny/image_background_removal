@@ -94,13 +94,6 @@ This use case is given by one of our partner companies to use Deep Learning tech
 - When you run this code, it is possible to upload an image on a flask app, then see both the original and background removed version of the image.
 - For the first uploaded image, it can take some time. From the second on, the process is faster.
 
-**modnet_alpha_matte_simon.ipynb**
-
-- This file contains all the code necessary to asses the quality of our results.
-- We compare the following to eachother:
-Alpha matte we acquired from the pretrained MODNET model to our ground truth mask we recived in the dataset.
-Alpha matte we acquired from DIM model to our ground truth mask we recived in the dataset.
-
 **data folder**
 
 - This directory contains the data needed for this project (train and test images).
@@ -108,6 +101,10 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 **utils folder**
 
 - This directory contains python files with useful functions and Classes.
+- It also contains all the code necessary to asses the quality of our results.
+- We compare the following to eachother:
+Alpha matte we acquired from the pretrained MODNET model to our ground truth mask we recived in the dataset.
+Alpha matte we acquired from DIM model to our ground truth mask we recived in the dataset.
 
 **FlaskApp folder**
 
