@@ -153,5 +153,3 @@ Image_Background_Removal
 [**↥ Back To The Top**](#table-of-contents)
 
 ---
-
-

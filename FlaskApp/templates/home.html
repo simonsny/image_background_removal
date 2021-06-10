@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+<!-- BANNER SECTION -->
+<div class="hero-image" >
+    <div class="hero-text">
+        <div class="row">
+            <div class="col-6">
+                <img src="{{url_for('static', filename='assets/remove.png')}}" style="width: 700px;" />
+            </div>
+            <div class="col-6">
+                <img src="{{url_for('static', filename='assets/cover.png')}}"  style="padding-left:35px;"/>
+            </div>
+        </div>
+        <button onclick="location.href='/start'" class="btn btn-primary btn-lg"><i class="fas fa-play"></i> Let's Start!</button>
+    </div>
+</div>
+<br>
+
+<br>
+<div class="jumbotron">
+    <h1 class="display-4">Remove Image Background</h1>
+    <p class="lead">Removing a background from an image in seconds!</p>
+    <hr class="my-4">
+    <p>This program uses deep learning techniques to remove the background from an image.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/start" role="button">Start Now!</a>
+    </p>
+</div>
+
+
+{% endblock content %}

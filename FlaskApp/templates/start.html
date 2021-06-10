@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<h1 class="mt-2" style="color: rgb(58, 56, 56); font-weight: bold;">Choose from the options below!</h1>
+<br>
+<!-- START SECTION -->
+<div class="card" style="background: transparent; padding: 20px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="card-body" style="margin-left: 20px; margin-right: 20px; ">
+        <div class="bs-example">
+            <!-- NAVIGATION TABS -->
+            <ul class="nav nav-tabs" style="font-size: larger;">
+                <li class="nav-item">
+                    <a href="#image" style="color: navy;" class="nav-link" data-toggle="tab"><strong>Image</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#video" style="color: navy;" class="nav-link" data-toggle="tab"><strong>Video</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#live" style="color: navy;" class="nav-link" data-toggle="tab"><strong>Live Feed</strong></a>
+                </li>
+                
+            </ul>
+            <!-- NAVIGATION TAB CONTENT -->
+            <div class="tab-content">
+
+                <!-- UPLOAD IMAGE TAB -->
+                <div class="tab-pane fade show active" id="image">
+                    <br>
+                    <h2 class="mt-2" style="font-weight: bold;"><strong> Upload Image</strong></h2>
+                        <br>
+                        <div class="col d-flex justify-content-center">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <div class="mb-3">
+                                    <label for="formFileSm" class="form-label">Choose the image: </label>
+                                    <input name="image" class="form-control form-control-sm" id="formFileSm" type="file" style="
+                                                              border: 1px solid whitesmoke;
+                                                              height: 34px;
+                                                              background-color: transparent;">
+                                </div>
+                                <p>
+                                    {% with messages = get_flashed_messages() %}
+                                    {% if messages %}
+                                <ul>
+                                    {% for message in messages %}
+                                    <li>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                                {% endwith %}
+                                </p>
+                                <br>
+                                <button type="submit" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Analyze</button>
+                            </form>
+                        </div>
+                </div>
+
+                <!-- UPLOAD VIDEO TAB -->
+                <div class="tab-pane fade" id="video">
+                    <br>
+                    <h2 class="mt-2" style="font-weight: bold;"><strong>Upload Video</strong></h2>
+                    <br>
+                    <div class="col d-flex justify-content-center">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label" >Choose the video: </label>
+                                <input name="video" class="form-control form-control-sm" id="formFileSm" type="file" style="
+                                          border: 1px solid whitesmoke;
+                                          height: 34px;
+                                          background-color: transparent;">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-outline-primary"> <i class="fas fa-play-circle"></i> Analyze</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- LIVE FEED TAB -->
+                <div class="tab-pane fade" id="live">
+                    <br>
+                        <br>
+                        <div class="card-body">
+                            <h2 class="mt-2" style="font-weight: bold;"><strong> Real-Time Feed</strong></h2>
+                                <br>
+                                <p><span>
+                                        Real Time feed will ask to access your webcam
+                                </span> 
+                                <span>
+                                    and it will start removing the background from your webcam.
+
+                                </span></p>
+                                <button onclick="location.href='/live_feed'" class="btn btn-outline-primary"><i class="fas fa-play-circle"></i> Start video</button>
+                                </a>
+                                <br>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
