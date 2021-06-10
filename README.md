@@ -88,7 +88,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 
 ![image](FlaskApp/static/assets/ILSVRC2012_test_00003399.jpg)
 
-**Updated_FlaskApp.ipynb**
+**FlaskApp.ipynb**
 
 - This file contains all the code necessary to locally deploy the process of background removal.
 - When you run this code, it is possible to upload an image on a flask app, then see both the original and background removed version of the image.
