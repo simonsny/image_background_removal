@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------
-![image](FlaskApp/static/assets/logo4.png)
+![image](FlaskApp/static/assets/logo1.png
 
 <h5> <strong> An applied Artificial Intelligence UseCase by Faktion and Becode to remove the background in seconds using Deep Learning technologies! </strong> </h5>
 
@@ -43,7 +43,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ---
 
 ## **About The Repository**
-![image](https://user-images.githubusercontent.com/60827480/121079465-6ec2f300-c7da-11eb-80ab-e69e244c9775.png)
+![image](FlaskApp/static/assets/cover.png)
 
 <p align="justify">
 One of our partner companies gave us a usecase to use Deep Learning technologies to remove the image background of an image. There are already a lot of pretrained models available. Our partner expects us to get better results either by transfer learning or training our own model.
