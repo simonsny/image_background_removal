@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import pandas as pd
 import os
+from utils.preprocessing import generate_trimap_from_mask
 
 #  Mean Squared Error (MSE)
 def calc_mse(ground_truth, predicted, gray_area):
@@ -54,14 +55,14 @@ def get_scores_alpha_matte_folders(ground_truth_dir, predicted_dir, save_path, k
         gt = cv2.imread(gt_path)
         pred = cv2.imread(pred_path)
         gt = reformat_mask(gt)
+        #maskk = generate_trimap_from_mask(gt)
+
+
         pred = reformat_mask(pred)
         gray_area = compute_gray_area(ground_truth=gt,
                                       kernel_size=4,
                                       it_erosion=1,
                                       it_dilation=2)
-        if np.sum(gray_area) == 0:
-            print('zero gray area')
-            print(gt_path)
         mse = calc_mse(gt, pred, gray_area)
         mad = calc_mad(gt, pred, gray_area)
         sad = calc_sad(gt, pred)
@@ -95,10 +96,11 @@ def reformat_mask(mask):
         mask = mask[:, :] / 255
     return mask
 
-#  directory with ground truth masks/alpha mattes
-gt_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\DUTS-TE-Mask'
-#  directory with predicted masks/alpha mattes
-pred_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\MODNet_output'
-#  Where to store the results
-save_path_ = r'C:\Users\simon\PycharmProjects\image_background_removal\data\scores.csv'
-get_scores_alpha_matte_folders(gt_dir, pred_dir, save_path_)
+if __name__ == '__main__':
+    #  directory with ground truth masks/alpha mattes
+    gt_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\DUTS-TE-Mask'
+    #  directory with predicted masks/alpha mattes
+    pred_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\MODNet_output'
+    #  Where to store the results
+    save_path_ = r'C:\Users\simon\PycharmProjects\image_background_removal\data\scores.csv'
+    get_scores_alpha_matte_folders(gt_dir, pred_dir, save_path_)
