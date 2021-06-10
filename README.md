@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------
-![image](FlaskApp/static/assets/logo1.png
+![image](FlaskApp/static/assets/logo1.png)
 
 <h5> <strong> An applied Artificial Intelligence UseCase by Faktion and Becode to remove the background in seconds using Deep Learning technologies! </strong> </h5>
 
