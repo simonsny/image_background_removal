@@ -13,7 +13,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - Duration: `2 weeks`
 - Deadline : `10/06/21 4:00 PM`
 - Team challenge: `Group Project`
-- Deployment Strategy: `Github Page, Google Colab and Flask`
+- Deployment Strategy: `Github Page, Google Collab and Flask`
 - Promotion : `AI Theano 2.27`
 - Coding Bootcamp: [Becode Artificial Intelligence (AI) Bootcamp](https://becode.org/learn/ai-bootcamp/)
 - Use Case Given By: [Faktion](https://www.faktion.com/)
@@ -48,11 +48,11 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 <p align="justify">
 This use case is given by one of our partner companies to use Deep Learning technologies to remove the background of an image. There are already a lot of pretrained models available. Our partner expects us to get better results either by transfer learning or training our own model.
 </p>
-<p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the [DUTS Image dataset](http://saliencydetection.net/duts/) to train and test on and also 15 High Quality images that the client chose.</p>
+<p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the <a href="http://saliencydetection.net/duts/">DUTS Image dataset</a> to train and test on and also 15 High Quality images that the client chose.</p>
 
-<p align="justify"> The state-of-the-art models out there are quite powerful at the moment. Because we only had two weeks for this project, we did not manage to push it further than the best results out there. However, we found different approches that will be fruitful when we have the time and resources to implement. 
+<p align="justify"> The state-of-the-art models out there are quite powerful at the moment. Because we only had two weeks for this project, we did not manage to push it further than the best results out there. However, we found different approches that can be fruitful if we would have the time and resources to implement. 
 </p>
-<p align = "justify">This project is currently deployed locally, if you want to try to run this on your own and you don't have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
+<p align = "justify">This project is currently deployed locally, if you want to try to run this on your own and you don't have a GPU on your computer, you can use <a href="https://colab.research.google.com/">Google Colab</a> as it needs a lot of computing power.</p>
 
 <br/>
 
@@ -62,7 +62,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 ### **Installation** 
 
 - If you have a GPU on your computer use the requirements.txt file to install the necessary libraries.
-- If you are using Google Colab, the code will work as it is, since we import all the necessary libraries in our code.
+- If you are using Google Collab, the code will work as it is, since we import all the necessary libraries in our code.
 
 ### **Repository**
 
@@ -155,7 +155,7 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 ---
 ### **Acknowledgments**
 
-- We would like to thank our coaches Chrysanthi Katrini and Alber Dominguez as well as Francesco Pochetti and Jeroen Boeye from Faktion for giving us the opportunity to work on an interesting use case as this. We also would like to thank our colleagues from BeCode Theano 2.27 promotion for making every project a group effort.
+- We would like to thank our coaches [Chrysanthi Katrini](https://github.com/chrysanthi989) and [Alber Dominguez](https://github.com/nedraki) as well as [Francesco Pochetti](https://www.linkedin.com/in/francescopochetti/) and [Jeroen Boeye](https://www.linkedin.com/in/jeroenboeye/) from [Faktion](https://www.faktion.com/) for giving us the opportunity to work on an interesting use case as this. We also would like to thank our colleagues from BeCode Theano 2.27 promotion for making every project a group effort.
 
 ![Thank you](FlaskApp/static/assets/thank_you.png)
 
