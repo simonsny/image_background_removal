@@ -145,7 +145,7 @@ Image_Background_Removal
 
 ---
 
-![Thank you](FlaskApp/static/assets/thankyou.png)
+![Thank you](FlaskApp/static/assets/thank_you.png)
 
 ### Thank you for reading. Have fun with the code! 🤗
 
