@@ -24,10 +24,11 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - [About The Repository](#about-the-repository)
 - [How To Use](#how-to-use)
 - [Repository](#repository)
-- [Libraries Used For This Project](#libraries-used-for-this-project)
+- [Main Libraries Used For This Project](#main-libraries-used-for-this-project)
 - [Future Plans](#future-plans)
 - [Collaboration](#collaboration)
 - [Authors Info](#authors-info)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -138,6 +139,7 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 
 - We would like to train our own model.
 - We would like to increase the quality of our trimap.
+---
 
 ### **Collaboration**
 
