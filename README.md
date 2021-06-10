@@ -28,7 +28,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - [Future Plans](#future-plans)
 - [Collaboration](#collaboration)
 - [Authors Info](#authors-info)
-- [Acknowledgments](#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
