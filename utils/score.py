@@ -52,13 +52,16 @@ def get_scores_alpha_matte_folders(ground_truth_dir, predicted_dir, save_path, k
     for i, img_name in enumerate(ground_truth_paths):
         gt_path = os.path.join(ground_truth_dir, img_name)  # ground truth path
         pred_path = os.path.join(predicted_dir, img_name.replace('jpg', 'png'))  # predicted mask path
+        if not os.path.isfile(pred_path):
+            pred_path = pred_path.replace('jpg', 'png')
+        if not os.path.isfile(gt_path):
+            gt_path = gt_path.replace('jpg', 'png')
         gt = cv2.imread(gt_path)
         pred = cv2.imread(pred_path)
         gt = reformat_mask(gt)
-        #maskk = generate_trimap_from_mask(gt)
-
 
         pred = reformat_mask(pred)
+
         gray_area = compute_gray_area(ground_truth=gt,
                                       kernel_size=4,
                                       it_erosion=1,
@@ -90,17 +93,38 @@ def compute_gray_area(ground_truth, kernel_size=4, it_erosion=1, it_dilation=2):
 
 def reformat_mask(mask):
     m = np.max(mask)
-    if len(mask.shape) == 3:
-        mask = mask.mean(axis=2)
+    try:
+        if len(mask.shape) == 3:
+            mask = mask.mean(axis=2)
+    except:
+        return -1
     if m > 1:
         mask = mask[:, :] / 255
     return mask
 
+
+def get_final_scores():
+    '''
+    Function that gets the 3 different scores of the 3 model outputs
+    '''
+    model_result_dirs = {
+        'DIM': r'C:\Users\simon\PycharmProjects\image_background_removal\data/DUTS-TE/DUTS-TE-Output',
+        'MODNet': r'C:\Users\simon\PycharmProjects\image_background_removal\data/DUTS-TE/MODNet_output',
+        'U2Net': r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\U2NET_output'
+
+    }
+    ground_truth_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data/DUTS-TE/DUTS-TE-Mask'
+    model_scores = {}
+    for model, dir_path in model_result_dirs.items():
+        print(model, dir_path)
+        save_path_ = dir_path + '_scores.csv'
+        model_scores[model] = get_scores_alpha_matte_folders(
+            ground_truth_dir, dir_path, save_path_
+        )
+        for key, value in model_scores.items():
+            mean = value.mean()
+            save_path_ = dir_path + '_scores_mean.csv'
+            mean.to_csv(save_path_)
+
 if __name__ == '__main__':
-    #  directory with ground truth masks/alpha mattes
-    gt_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\DUTS-TE-Mask'
-    #  directory with predicted masks/alpha mattes
-    pred_dir = r'C:\Users\simon\PycharmProjects\image_background_removal\data\DUTS-TE\MODNet_output'
-    #  Where to store the results
-    save_path_ = r'C:\Users\simon\PycharmProjects\image_background_removal\data\scores.csv'
-    get_scores_alpha_matte_folders(gt_dir, pred_dir, save_path_)
+    get_final_scores()
