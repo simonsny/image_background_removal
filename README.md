@@ -90,6 +90,8 @@ Image_Background_Removal │ │ README.md :explains the project │ requirement
 - It shows the workflow followed.
 - All the pretrained model steps are shown.
 
+![image](FlaskApp/static/assets/ILSVRC2012_test_00003399.jpg)
+
 **Updated_FlaskApp.ipynb**
 
 - This file contains all the code necessary to locally deploy the process of background removal.
