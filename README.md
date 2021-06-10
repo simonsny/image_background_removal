@@ -57,22 +57,13 @@ This use case is given by one of our partner companies to use Deep Learning tech
 <br/>
 
 
----
-## **Architecture**
-Image_Background_Removal │ │ README.md :explains the project │ requirements.txt :packages to install to run the program │ .gitignore :specifies which files to ignore when pushing to the repository │__
-│ utils :directory that contains python files with useful functions and Classes │ │ │ │ preprocessing.py :python file that contains preprocessing functions (example file) │__ │ data :directory that contains the data needed for this project (train and test images) │ │ DUTS-TE
-│ │ │ DUTS-TE-Image │ │ │ DUTS-TE-Mask │ │ DUTS-TR │ │ │ DUTS-TR-Image │ │ │ DUTS-TR-Mask
-
-
----
-
 ## **How To Use**
 
 ### **Installation** 
 
 
 
-## **Repository**
+### **Repository**
 
 
 **README.md**
@@ -127,7 +118,7 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 
 ---
 
-## **Libraries Used For This Project**
+### **Libraries Used For This Project**
 
 **OpenCV** https://opencv.org/
 
@@ -149,22 +140,25 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 
 ---
 
-## **Future Plans**
+### **Future Plans**
 
 - We would like to train our own model.
 - We would like to increase the quality of our trimap.
 
-## **Collaboration**
+### **Collaboration**
 
 - This project is open to collaborations as well as forking or cloning for further development. If you wish to clone/fork this repository, you can do so by clicking on the repository, then click the Clone/Fork button and follow the instructions.
 ---
 
-## **Authors Info**
+### **Authors Info**
 
 - Linkedin - **[Simon Snyders](https://www.linkedin.com/in/simon-snyders-9452aa146/)**, **[Louan Mastrogiovanni](https://www.linkedin.com/in/louan-mastrogiovanni-9a0a46143/)** and **[Gülce Padem](https://www.linkedin.com/in/gulce-padem/)**, and **[Arlene Postrado](https://www.linkedin.com/in/arlene-postrado/)**
 - Github   - **[Simon Snyders](https://github.com/simonsny)**, **[Louan Mastrogiovanni](https://github.com/Louan-M)** and **[Gülce Padem](https://github.com/gpadem)**, and **[Arlene Postrado](https://github.com/arlene14ko)**
 
 ---
+### **Acknowledgments**
+
+- We would like to thank our coaches Chrysanthi Katrini and Alber Dominguez as well as Francesco Pochetti and Jeroen Boeye from Faktion for giving us the opportunity to work on an interesting use case as this. We also would like to thank our colleagues from BeCode Theano 2.27 promotion for making every project a group effort.
 
 ![Thank you](FlaskApp/static/assets/thank_you.png)
 
