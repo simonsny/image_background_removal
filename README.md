@@ -145,7 +145,7 @@ Image_Background_Removal
 
 ---
 
-![Thank you](https://static.euronews.com/articles/320895/560x315_320895.jpg?1452514624)
+![Thank you](FlaskApp/static/assets/thankyou.png)
 
 ### Thank you for reading. Have fun with the code! 🤗
 
