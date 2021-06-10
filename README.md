@@ -14,7 +14,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 - Deadline : `10/06/21 4:00 PM`
 - Team challenge: `Group Project`
 - Deployment Strategy: `Github Page, Google Collab and Flask`
-- Promotion : `AI Theano 2`
+- Promotion : `AI Theano 2.27`
 - Coding Bootcamp: [Becode Artificial Intelligence (AI) Bootcamp](https://becode.org/learn/ai-bootcamp/)
 - Use Case Given By: [Faktion](https://www.faktion.com/)
 
@@ -122,7 +122,7 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 - OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.
 - In this project, OpenCV is used to read the image and calculate the erosion and dilation for the trimap.
 
-**PyTorch** 
+**PyTorch** https://pytorch.org/
 
 - An open source machine learning framework that accelerates the path from research prototyping to production deployment.
 - In this project, PyTorch is used to run a pretrained model.
