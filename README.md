@@ -61,24 +61,9 @@ This use case is given by one of our partner companies to use Deep Learning tech
 
 ---
 ## **Architecture**
-
-Image_Background_Removal
-│
-│   README.md               :explains the project
-│   requirements.txt        :packages to install to run the program
-│   .gitignore              :specifies which files to ignore when pushing to the repository
-│__   
-│   utils                   :directory that contains python files with useful functions and Classes
-│   │
-│   │ preprocessing.py      :python file that contains preprocessing functions (example file)
-│__
-│   data                    :directory that contains the data needed for this project (train and test images)
-│   │ DUTS-TE               
-│   │   │ DUTS-TE-Image
-│   │   │ DUTS-TE-Mask 
-│   │ DUTS-TR
-│   │   │ DUTS-TR-Image
-│   │   │ DUTS-TR-Mask
+Image_Background_Removal │ │ README.md :explains the project │ requirements.txt :packages to install to run the program │ .gitignore :specifies which files to ignore when pushing to the repository │__
+│ utils :directory that contains python files with useful functions and Classes │ │ │ │ preprocessing.py :python file that contains preprocessing functions (example file) │__ │ data :directory that contains the data needed for this project (train and test images) │ │ DUTS-TE
+│ │ │ DUTS-TE-Image │ │ │ DUTS-TE-Mask │ │ DUTS-TR │ │ │ DUTS-TR-Image │ │ │ DUTS-TR-Mask
 
 
 ---
