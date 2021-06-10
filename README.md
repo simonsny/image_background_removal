@@ -50,7 +50,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 </p>
 <p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the [DUTS Image dataset](http://saliencydetection.net/duts/) to train and test on and also 15 High Quality images that the client chose.</p>
 
-<p align="justify"> ------ Conclusion here -----
+<p align="justify"> The state-of-the-art models out there are quite powerful at the moment. Because we only had two weeks for this project, we did not manage to push it further than the best results out there. However, we found different approches that can be fruitful if we would have the time and resources to implement. 
 </p>
 <p align = "justify">This project is currently deployed locally, if you want to try to run this on your own and you don't have a GPU on your computer, you can use [Google Colab](https://colab.research.google.com/) as it needs a lot of computing power.</p>
 
@@ -61,7 +61,8 @@ This use case is given by one of our partner companies to use Deep Learning tech
 
 ### **Installation** 
 
-
+- If you have a GPU on your computer use the requirements.txt file to install the necessary libraries.
+- If you are using Google Collab, the code will work as it is, since we import all the necessary libraries in our code.
 
 ### **Repository**
 
@@ -74,6 +75,10 @@ This use case is given by one of our partner companies to use Deep Learning tech
 **.gitignore**
 
 - This specifies which files to ignore when pushing to the repository.
+
+**requirements.txt**
+
+- This files contains all the necessary libraries, used in this project.
 
 **bg_removal_workflow.ipynb**
 
@@ -108,17 +113,9 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 
 - This directory contains files for the local deployment of the project.
 
-
-
-
-
-
-
-------------- ADD OTHER STUFF HERE ----------
-
 ---
 
-### **Libraries Used For This Project**
+### **Main Libraries Used For This Project**
 
 **OpenCV** https://opencv.org/
 
@@ -135,8 +132,6 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 - Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
 - In this project, flask is used to create the web dashboard application.
 
-
-------------- ADD OTHER STUFF HERE ----------
 
 ---
 
