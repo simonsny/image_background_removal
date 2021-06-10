@@ -56,8 +56,6 @@ This use case is given by one of our partner companies to use Deep Learning tech
 
 <br/>
 
-**Here is a sample dashboard:**!
- ---------------- SAMPLE HERE ----------------
 
 ---
 ## **Architecture**
@@ -84,17 +82,39 @@ Image_Background_Removal │ │ README.md :explains the project │ requirement
 
 **.gitignore**
 
+- This specifies which files to ignore when pushing to the repository.
+
 **bg_removal_workflow.ipynb**
+
+- This file contains all the code necessary to get an alpha matte image from the original image.
+- It shows the workflow followed.
+- All the pretrained model steps are shown.
 
 **Updated_FlaskApp.ipynb**
 
+- This file contains all the code necessary to locally deploy the process of background removal.
+- When you run this code, it is possible to upload an image on a flask app, then see both the original and background removed version of the image.
+- For the first uploaded image, it can take some time. From the second on, the process is faster.
+
 **modnet_alpha_matte_simon.ipynb**
+
+- This file contains all the code necessary to asses the quality of our results.
+- We compare the following to eachother:
+Alpha matte we acquired from the pretrained MODNET model to our ground truth mask we recived in the dataset.
+Alpha matte we acquired from DIM model to our ground truth mask we recived in the dataset.
 
 **data folder**
 
+- This directory contains the data needed for this project (train and test images).
+
 **utils folder**
 
+- This directory contains python files with useful functions and Classes.
+
 **FlaskApp folder**
+
+- This directory contains files for the local deployment of the project.
+
 
 
 
