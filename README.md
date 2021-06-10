@@ -103,8 +103,8 @@ This use case is given by one of our partner companies to use Deep Learning tech
 - This directory contains python files with useful functions and Classes.
 - It also contains all the code necessary to asses the quality of our results.
 - We compare the following to eachother:
-Alpha matte we acquired from the pretrained MODNET model to our ground truth mask we recived in the dataset.
-Alpha matte we acquired from DIM model to our ground truth mask we recived in the dataset.
+ * Alpha matte we acquired from the pretrained MODNET model to our ground truth mask we recived in the dataset. 
+ * Alpha matte we acquired from DIM model to our ground truth mask we recived in the dataset.
 
 **FlaskApp folder**
 
