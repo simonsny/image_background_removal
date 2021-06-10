@@ -138,7 +138,8 @@ Alpha matte we acquired from DIM model to our ground truth mask we recived in th
 ### **Future Plans**
 
 - We would like to train our own model.
-- We would like to increase the quality of our trimap.
+- We would like to increase the quality of our trimap so that we can improve our alpha masking.
+- We would like to combine the strengths of different models and understand better how to finetune for a diverse dataset.
 ---
 
 ### **Collaboration**
