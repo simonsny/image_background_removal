@@ -46,7 +46,7 @@ This project outcome belongs to **[Simon Snyders](https://github.com/simonsny)**
 ![image](FlaskApp/static/assets/cover.png)
 
 <p align="justify">
-One of our partner companies gave us a usecase to use Deep Learning technologies to remove the image background of an image. There are already a lot of pretrained models available. Our partner expects us to get better results either by transfer learning or training our own model.
+This use case is given by one of our partner companies to use Deep Learning technologies to remove the background of an image. There are already a lot of pretrained models available. Our partner expects us to get better results either by transfer learning or training our own model.
 </p>
 <p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the [DUTS Image dataset](http://saliencydetection.net/duts/) to train and test on and also 15 High Quality images that the client chose.</p>
 
@@ -78,7 +78,7 @@ Image_Background_Removal
 │   │   │ DUTS-TE-Mask 
 │   │ DUTS-TR
 │   │   │ DUTS-TR-Image
-│   │   │ DUTS-TR-Mask 
+│   │   │ DUTS-TR-Mask
 
 
 ---
@@ -87,19 +87,33 @@ Image_Background_Removal
 
 ### **Installation** 
 
-`Python Ver. '3.8'`
----add other stuff here -----
 
-
----
 
 ## **Repository**
 
 
 **README.md**
 
-- This file has all the necessary information regarding the project.
+- This file has all the necessary information regarding the project.You are reading it now.
 - It is highly recommended to read all the information in the README file.
+
+**.gitignore**
+
+**bg_removal_workflow.ipynb**
+
+**Updated_FlaskApp.ipynb**
+
+**modnet_alpha_matte_simon.ipynb**
+
+**data folder**
+
+**utils folder**
+
+**FlaskApp folder**
+
+
+
+
 
 
 ------------- ADD OTHER STUFF HERE ----------
