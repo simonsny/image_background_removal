@@ -50,7 +50,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 </p>
 <p align="justify">The goal is to train our own model or use transfer learning to create a model that can give a quality result and also a result that is fast and reliable. We were given the <a href="http://saliencydetection.net/duts/">DUTS Image dataset</a> to train and test on and also 15 High Quality images that the client chose.</p>
 
-<p align="justify"> The state-of-the-art models out there are quite powerful at the moment. Because we only had two weeks for this project, we did not manage to push it further than the best results out there. However, we found different approches that will be fruitful when we have the time and resources to implement. 
+<p align="justify"> The state-of-the-art models out there are quite powerful at the moment. Because we only had two weeks for this project, we did not manage to push it further than the best results out there. However, we found different approaches that will be fruitful when we have the time and resources to implement. 
 </p>
 <p align = "justify">This project is currently deployed locally, if you want to try to run this on your own and you don't have a GPU on your computer, you can use <a href="https://colab.research.google.com/">Google Colab</a> as it needs a lot of computing power.</p>
 
