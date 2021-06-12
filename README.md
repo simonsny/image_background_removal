@@ -153,7 +153,7 @@ This use case is given by one of our partner companies to use Deep Learning tech
 ---
 ### **Acknowledgements**
 
-- We would like to thank our coaches [Chrysanthi Katrini](https://github.com/chrysanthi989) and [Alber Dominguez](https://github.com/nedraki) as well as [Francesco Pochetti](https://www.linkedin.com/in/francescopochetti/) and [Jeroen Boeye](https://www.linkedin.com/in/jeroenboeye/) from [Faktion](https://www.faktion.com/)for giving us the opportunity to work on an interesting use case as this. We also would like to thank our colleagues from BeCode Theano 2.27 promotion for making every project a group effort.
+- We would like to thank our coaches [Chrysanthi Katrini](https://github.com/chrysanthi989) and [Alber Dominguez](https://github.com/nedraki) as well as [Francesco Pochetti](https://www.linkedin.com/in/francescopochetti/) and [Jeroen Boeye](https://www.linkedin.com/in/jeroenboeye/) from [Faktion](https://www.faktion.com/) for giving us the opportunity to work on an interesting use case as this. We also would like to thank our colleagues from BeCode Theano 2.27 promotion for making every project a group effort.
 
 ![Thank you](FlaskApp/static/assets/thank_you.png)
 
